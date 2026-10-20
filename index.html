@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy · ToaKoers</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #fff7ed 0%, #fef0e4 100%);
+            font-family: 'Segoe UI', 'Inter', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #3e2e23;
+            padding: 2rem 1.25rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .policy-card {
+            max-width: 880px;
+            width: 100%;
+            background: #fffffffa;
+            backdrop-filter: blur(2px);
+            border-radius: 42px;
+            box-shadow: 0 20px 40px -12px rgba(120, 70, 40, 0.18), 
+                        0 8px 20px -8px rgba(180, 120, 70, 0.12);
+            padding: 3rem 3.2rem;
+            border: 1px solid #ffdcc2;
+            transition: all 0.2s ease;
+            margin: 1.5rem 0;
+        }
+
+        /* warm decorative touches */
+        .policy-card::before {
+            content: '';
+            display: block;
+            width: 90px;
+            height: 6px;
+            background: linear-gradient(90deg, #f2a65a, #e08b4b, #d97b36);
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            color: #4a2e1c;
+            margin-bottom: 0.4rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h1 small {
+            font-size: 1.1rem;
+            font-weight: 400;
+            background: #fae1ce;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            color: #6b3f24;
+            letter-spacing: 0.3px;
+            margin-left: 10px;
+        }
+
+        .last-updated {
+            font-size: 1rem;
+            color: #9c7c63;
+            margin-bottom: 2.4rem;
+            border-bottom: 1px dashed #e6c7ae;
+            padding-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .last-updated span {
+            background: #fce9da;
+            padding: 0.2rem 0.8rem;
+            border-radius: 30px;
+            font-weight: 500;
+            color: #6b4a30;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            font-weight: 500;
+            color: #4c2f1b;
+            margin-top: 2.2rem;
+            margin-bottom: 0.9rem;
+            border-left: 5px solid #ed9e5e;
+            padding-left: 1.2rem;
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            color: #4b3a2c;
+        }
+
+        .highlight {
+            background: #fff3e7;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+            font-weight: 500;
+            color: #7b4d2c;
+        }
+
+        ul {
+            margin: 1.2rem 0 1.8rem 2rem;
+            list-style-type: none;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            padding-left: 2rem;
+            position: relative;
+            font-size: 1.05rem;
+        }
+
+        li::before {
+            content: "🍂";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        .contact-box {
+            background: #fbe9db;
+            border-radius: 28px;
+            padding: 1.6rem 2rem;
+            margin-top: 2.5rem;
+            border: 1px solid #f3cdb0;
+            box-shadow: inset 0 2px 6px rgba(255, 235, 215, 0.6);
+        }
+
+        .contact-box p {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #4e321e;
+        }
+
+        .email-link {
+            font-size: 1.3rem;
+            font-weight: 600;
+            background: #ffffffd0;
+            padding: 0.5rem 1.4rem;
+            border-radius: 60px;
+            display: inline-block;
+            margin-top: 0.3rem;
+            color: #a5541f;
+            text-decoration: none;
+            border: 1px solid #e8b78c;
+            transition: all 0.2s;
+            word-break: break-all;
+        }
+
+        .email-link:hover {
+            background: #ffffff;
+            box-shadow: 0 4px 12px rgba(200, 120, 60, 0.2);
+            transform: translateY(-1px);
+            color: #814211;
+        }
+
+        .footnote {
+            margin-top: 2.8rem;
+            font-size: 0.9rem;
+            color: #ab8a72;
+            text-align: center;
+            border-top: 1px solid #eed7c2;
+            padding-top: 1.8rem;
+        }
+
+        .footnote a {
+            color: #b4692e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footnote a:hover {
+            text-decoration: underline;
+        }
+
+        /* responsive */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+            .policy-card {
+                padding: 2rem 1.5rem;
+                border-radius: 32px;
+            }
+            h1 {
+                font-size: 2.1rem;
+                flex-wrap: wrap;
+            }
+            h1 small {
+                font-size: 0.9rem;
+                margin-left: 0;
+            }
+            h2 {
+                font-size: 1.4rem;
+            }
+            .email-link {
+                font-size: 1.1rem;
+                padding: 0.4rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="policy-card">
+        <h1>
+            ToaKoers 
+            <small>Privacy Policy</small>
+        </h1>
+        <div class="last-updated">
+            <span>Last updated: October 15, 2026</span> 
+            · warm & transparent
+        </div>
+
+        <p>Welcome to <strong>ToaKoers</strong> (we, our, or us). We deeply respect your privacy and are committed to keeping your personal information safe and sound. This Privacy Policy explains what we collect, why we collect it, and how we use it — always with care and clarity. By using ToaKoers, you agree to the practices described below.</p>
+
+        <h2>1. Information we collect</h2>
+        <p>We collect only the minimum information needed to make ToaKoers work smoothly for you. This may include:</p>
+        <ul>
+            <li><strong>Account details</strong> – your name, email address, and profile picture (if you choose to add one).</li>
+            <li><strong>Usage data</strong> – anonymous interaction logs, feature usage, and crash reports to help us improve stability.</li>
+            <li><strong>Device & network info</strong> – device type, operating system, and approximate region for performance optimization.</li>
+            <li><strong>Communications</strong> – if you reach out to us, we keep a record of our conversation to assist you better.</li>
+        </ul>
+        <p>We <span class="highlight">do not sell</span> your personal data. Ever. No hidden agendas — just a warm, honest relationship.</p>
+
+        <h2>2. How we use your information</h2>
+        <p>Your data helps us create a cozy, seamless experience. We use it to:</p>
+        <ul>
+            <li>Provide and maintain ToaKoers features you love.</li>
+            <li>Personalize your journey (like remembering your preferences).</li>
+            <li>Send you service updates and gentle reminders (only if you opt in).</li>
+            <li>Improve our app’s performance, security, and reliability.</li>
+            <li>Respond to your questions and support requests with care.</li>
+        </ul>
+        <p>We never use your data for intrusive advertising or share it with third parties for marketing purposes.</p>
+
+        <h2>3. Cookies & local storage</h2>
+        <p>ToaKoers uses lightweight cookies and local storage to remember your settings and keep you signed in. These tiny helpers don’t track you across the web — they just make your experience feel like home. You can disable cookies in your browser, but some features may become less cozy.</p>
+
+        <h2>4. Sharing & disclosure</h2>
+        <p>We only share information in limited circumstances:</p>
+        <ul>
+            <li>With <strong>service providers</strong> who help us run the app (e.g., hosting, analytics) — they are bound by strict confidentiality.</li>
+            <li>If required by <strong>law</strong>, or to protect our rights, safety, or the safety of others.</li>
+            <li>In case of a <strong>merger or acquisition</strong> — we’ll notify you before your data moves.</li>
+        </ul>
+        <p>We never rent, sell, or trade your personal information.</p>
+
+        <h2>5. Data retention & security</h2>
+        <p>We keep your data only as long as necessary to provide our services or as required by law. We use modern encryption (like TLS), secure storage, and access controls to guard your information. While no system is 100% immune, we work hard to keep your data warm and protected.</p>
+
+        <h2>6. Your rights & choices</h2>
+        <p>You’re always in control. You can:</p>
+        <ul>
+            <li><strong>Access</strong> the personal data we hold about you.</li>
+            <li><strong>Correct</strong> any inaccurate or outdated info.</li>
+            <li><strong>Delete</strong> your account and associated data (just contact us).</li>
+            <li><strong>Opt out</strong> of non-essential communications anytime.</li>
+        </ul>
+        <p>To exercise any of these rights, simply email us — we’ll make it right within 30 days.</p>
+
+        <h2>7. Children's privacy</h2>
+        <p>ToaKoers is not directed to children under 13. We do not knowingly collect data from kids. If you believe a child has provided us information, please contact us and we’ll promptly remove it.</p>
+
+        <h2>8. Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time — we’ll always post the latest version here and adjust the “Last updated” date. If we make significant changes, we’ll give you a friendly in-app notice. Continued use after changes means you accept the updated terms.</p>
+
+        <!-- warm contact section -->
+        <div class="contact-box">
+            <p style="font-size: 1.2rem; font-weight: 600; margin-bottom: 0.4rem;">☕️ Questions? We’re here for you.</p>
+            <p>If you have any concerns about your privacy or just want to say hello, reach out to our support team:</p>
+            <a href="mailto:hpic9223@gmail.com" class="email-link">📮 hpic9223@gmail.com</a>
+            <p style="margin-top: 1rem; font-size: 0.95rem; opacity: 0.9;">We usually reply within 1–2 business days — with a warm cup of kindness.</p>
+        </div>
+
+        <div class="footnote">
+            <p>© 2026 ToaKoers · Made with 🤎 · <a href="#" style="text-decoration: none;">Back to top</a></p>
+            <p style="margin-top: 0.5rem; font-size: 0.85rem;">Your trust means the world to us.</p>
+        </div>
+    </div>
+</body>
+</html>
